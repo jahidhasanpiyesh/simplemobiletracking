@@ -9,8 +9,8 @@ number = input("Enter Your Phone Numbers : ")
 phone = phonenumbers.parse(number)
 time = timezone.time_zones_for_number(phone)
 sim_service = carrier.name_for_number(phone, "en")
-register_location = geocoder.description_for_number(phone, "en")
+register_location_area = geocoder.description_for_number(phone, "en")
 
-print(register_location)
+print(register_location_area)
 print(sim_service)
 
